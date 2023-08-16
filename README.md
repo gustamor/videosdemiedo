@@ -1,7 +1,7 @@
 ## _Código fuente de vídeos de miedo de Youtube_
 
 Es una app publicada en GP desde el fatídico *abril del 2020 hasta agosto del 2023*
-Todos los vídeos, sin excepción alguna, están publicado en la plataforma Youtube(TM)
+Todos los vídeos, sin excepción alguna, están publicados en la plataforma Youtube(TM)
 
 - Lee de un backend datos de vídeos de Youtube y los muestra en una lista. 
 - Guarda favoritos y hace búsquedas
