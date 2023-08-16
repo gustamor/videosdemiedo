@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_collapsed_layoutHeight">94dp</dimen>
+    <dimen name="card_collapsed_titleHeight">34dp</dimen>
+    <dimen name="card_collapsed_subtitleHeight">22dp</dimen>
+    <dimen name="card_collapsed_paddingLeftIcon">8dp</dimen>
+    <dimen name="card_collapsed_paddingRightIcon">14dp</dimen>
+    <dimen name="card_collapsed_iconHeight">94dp</dimen>
+    <dimen name="card_collapsed_iconWidth">94dp</dimen>
+    <dimen name="card_expanded_imagePosterHeight">194dp</dimen>
+    <dimen name="card_expanded_large_land_imagePosterHeight">568dp</dimen>
+    <dimen name="card_expanded_large_imagePosterHeight">426dp</dimen>
+
+    <dimen name="cast_icon_height">180dp</dimen>
+    <dimen name="cast_icon_width">180dp</dimen>
+
+    <!-- App Bars -->
+    <!-- preferenceFragment -->
+    <!-- Defaults -->
+    <!-- Spacing -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">6dp</dimen>
+    <dimen name="spacing_m">8dp</dimen>
+    <dimen name="spacing_l">12dp</dimen>
+    <dimen name="spacing_xl">16dp</dimen>
+    <dimen name="spacing_xxl">18dp</dimen>
+
+    <dimen name="textsize_s">14sp</dimen>
+    <dimen name="textsize_m">16sp</dimen>
+    <dimen name="textsize_l">18sp</dimen>
+    <dimen name="textsize_xl">20sp</dimen>
+
+    <!-- DetailLayouts -->
+
+    <!-- Drawer -->
+
+
+    <!-- (Overview) Card -->
+
+    <!-- Attachment pager -->
+
+    <!-- Pseudotoolbar -->
+
+
+</resources>

@@ -1,0 +1,134 @@
+<resources>
+
+
+    <string name="app_name">Peliculas Gratis de Terror</string>
+    <string name="app_name_toolbar">Cine de terror</string>
+    <string name="appbar_scrolling_view_behavior" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- Dialogs -->
+
+    <string name="dontleaveus">Leave us?</string>
+
+    <!-- settings -->
+
+
+    <!-- general-->
+    <string name="favorites">My favorites</string>
+    <string name="loading">Loading…</string>
+    <string name="empty_textview">Error loading data</string>
+    <string name="yes">Yes</string>
+    <string name="share">Share</string>
+    <string name="search_hint">Search</string>
+    <string name="search">Search</string>
+    <string name="no">No</string>
+
+
+    <!-- Connection dialogs -->
+
+
+    <!-- Search dialog -->
+
+    <string name="search_message">Type to search videos</string>
+    <string name="ok">OK</string>
+
+
+    <!-- Youtube -->
+
+    <string name="send_to">Send to</string>
+
+
+    <!-- Navigation menu -->
+
+    <string name="ilike">Like</string>
+    <string name="rate_app">I want to rate it! ⭐</string>
+
+    <!-- Order by menu -->
+
+    <string name="newer">Newer</string>
+    <string name="older">Older</string>
+    <string name="descr_order_menu">Order by</string>
+    <!-- Bus Events -->
+
+
+    <!-- About Us -->
+    <string name="aboutus">About Us</string>
+    <string name="wedonthaverights"> We do not own the rights for the videos. If any Creator is
+having issues, feel free to mail us directly at -: riseagain.apps@gmail.com</string>
+    <string name="domainsource">All videos are public content from Youtube</string>
+    <string name="trademark">TM</string>
+
+
+    <!-- Notifications -->
+
+    <string name="nowplaying">Now playing: </string>
+    <string name="from">from</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <string name="suggestions">Content requests</string>
+
+    <!-- Invites messages -->
+
+    <string name="facebookQuote">I`m watching this app and sure you like it:   \n</string>
+    <string name="error_data">Error fetching data</string>
+
+
+    <string name="suggest_film_subject">[Contenido] Petición de Películas de Terror </string>
+    <string name="suggest_film_message">¿Buscas alguna película? ¿Algunas de las que hay en la app no está cargando? Coméntanoslo aquí:\n\n</string>
+
+    <string name="invite_email">Invite friend via Email</string>
+
+    <string name="moreapps">Ad: Install more apps from us</string>
+    <string name="tweet_app">Tweet this app</string>
+    <string name="facebook_app">Tell your friends about this</string>
+    <string name="othernets">Share with others networks</string>
+    <string name="promotionalMessage">Hey! I\'m sure you\'ll like : \n</string>
+
+    <string name="hola">Hola\,\n\I am watching now\:  </string>
+    <string name="pelisandroid">\n\nPelículas Gratis de Terror for Android.\n Click the link to open the app:\n</string>
+    <!-- Sync Preferences -->
+    <string name="busco_pelicula">¿Buscas alguna película? Comentanoslo aquí:/n</string>
+
+
+    <!-- Link addresses -->
+    <string name="installDeeplink">https://cinedeterror.page.link/pelisgratis</string>
+    <string name="GP_Link">https://play.google.com/store/apps/details?id=net.laenredadera.full.peliculas.gratis.de.terror</string>
+    <string name="GP_AriseApps">https://play.google.com/store/apps/developer?id=Arise+App</string>
+
+    <!-- <string name="facebook_app_id">2493387667409698</string>
+     <string name="fb_login_protocol_scheme">fb2493387667409698</string>-->
+
+    <string name="noconnection">At this moment it is not possible to connect to the server. Please try again in ten minutes.</string>
+    <string name="currentTime">Current time</string>
+    <string name="totalTime">Total</string>
+
+    <string name="wallpaperscary_promo">Scary Pictures</string>
+    <string name="wallpaper_deeplink">https://scarywallpapers.page.link/instala</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="splashdescription">The palm of many hands bts can be seen in front of the devices screen.</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="favEmpyIcon">Is not favorite</string>
+    <string name="send_to_ytbe">Sent to Player</string>
+    <string name="without_config_title">
+       Fallo de conexión
+    </string>
+    <string name="without_config_message">No has hecho nada mal, el fallo está de nuestro lado. Si el problema continúa ocurriendo, ponte en contacto con nosotros
+    </string>
+    <string name="try_again">
+        Write with support
+    </string>
+    <string name="cancel">
+        Cancel
+    </string>
+
+    <string name="firebase_crash_subject">[Soporte] No ha sido posible conectar</string>
+    <string name="firebase_crash_message"> </string>
+</resources>

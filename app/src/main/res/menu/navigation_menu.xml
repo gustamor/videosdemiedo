@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/rate_app_menu">
+        <item android:id="@+id/share_rate_app"
+            android:icon="@drawable/ic_star_gold_24dp"
+            android:title="@string/rate_app">
+        </item>
+        <item android:id="@+id/suggest_film_menu"
+            android:icon="@drawable/ic_movie"
+            android:title="@string/suggestions">
+        </item>
+    </group>
+
+    <group android:id="@+id/share_app_menu"
+        android:title="@string/share"
+        >
+        <item android:id="@+id/share_email"
+            android:icon="@drawable/ic_email_white_24dp"
+            android:title="@string/invite_email">
+        </item>
+        <item android:id="@+id/share_facebook"
+            android:icon="@drawable/facebooklogo"
+            android:title="@string/facebook_app">
+        </item>
+        <item android:id="@+id/share_twitter"
+            android:icon="@drawable/twitter"
+            android:title="@string/tweet_app">
+        </item>
+
+        <item android:id="@+id/share_others"
+            android:icon="@drawable/ic_share_white_24dp"
+            android:title="@string/othernets">
+        </item>
+    </group>
+
+    <group android:id="@+id/apps_menu">
+
+
+        <item android:id="@+id/menu_about_us"
+            android:icon="@drawable/ic_info_black_32dp"
+            android:iconTint="@color/grey"
+            android:title="@string/aboutus"
+            />
+
+        <item android:id="@+id/share_moreapps"
+            android:title="@string/moreapps">
+        </item>
+
+    </group>
+
+</menu>

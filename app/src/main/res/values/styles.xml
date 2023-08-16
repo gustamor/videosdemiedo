@@ -1,0 +1,47 @@
+<resources>
+
+
+    <style name="Material.AppThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorBackgroundDark</item>
+        <item name="colorPrimaryDark">@color/colorBackgroundDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="subtitleTextColor">@color/almost_pure_white</item>
+        <item name="colorBackgroundFloating">@color/colorBackgroundDark</item>
+
+    </style>
+
+    <style name="Material.AppThemeDark.ActionBar" parent="Material.AppThemeDark">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="AlertDialogCrashed" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Clean Usage of listTitle -->
+
+    <style name="VideoRuntimeOverlayText">
+        <item name="android:paddingLeft">@dimen/spacing_s</item>
+        <item name="android:paddingRight">@dimen/spacing_s</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_l</item>
+        <item name="android:layout_marginRight">@dimen/spacing_xl</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:background">@color/black_more_translucent</item>
+    </style>
+    <style name="MonotonTextAppearance">
+        <item name="android:fontFamily">@font/chunq_dipped</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="DanceScriptTextAppearance">
+        <item name="android:fontFamily">@font/paranoid_freak</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

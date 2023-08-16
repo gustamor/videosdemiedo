@@ -1,0 +1,9 @@
+include ':app'
+rootProject.name='PelisDeTerror'
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            url 'https://android-sdk.is.com/'
+        }
+    }
+}

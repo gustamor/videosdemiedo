@@ -1,0 +1,167 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.13.4'
+    }
+}
+repositories {
+    maven { url 'https://maven.google.com' }
+    mavenCentral()
+    maven {
+        url 'https://android-sdk.is.com/'
+    }
+}
+repositories {
+    google()
+    /** The default repository for Android Studio projects */
+    jcenter()
+    /** The repository required for AdColony 3.0 and above */
+
+    maven {
+        url "https://dl.bintray.com/ironsource-mobile/android-sdk"
+    }
+
+    maven {
+        url 'https://dl.bintray.com/ironsource-mobile/android-adapters'
+    }
+    maven {url 'https://android-sdk.is.com/'}
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "net.laenredadera.full.peliculas.gratis.de.terror"
+        minSdkVersion 20
+        targetSdkVersion 33
+        multiDexEnabled true
+        versionCode 301
+        versionName "3.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resConfigs "es", "en"
+        manifestPlaceholders = [
+                onesignal_app_id               : '4cbf587a-2d3c-41fc-a763-c00db6f870a9',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        splits {
+            abi {
+                enable true
+                reset()
+                include "x86", "x86_64", "armeabi-v7a", "arm64-v8a", 'armeabi', 'mips', 'mips64'
+                universalApk true
+            }
+        }
+    }
+    realm {
+        syncEnabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.mediarouter:mediarouter:1.3.1'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.3'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.karumi:dexter:6.2.1'
+    implementation 'com.onesignal:OneSignal:4.8.2'
+    //Firebase SDKs
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+   // implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-config'
+    implementation platform('com.google.firebase:firebase-bom:29.0.4')
+    implementation 'com.google.firebase:firebase-perf'
+
+    //Crash Reports
+    implementation 'com.google.firebase:firebase-crash:16.2.1'
+
+    // JsonSerialization
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    //UI UX
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.duolingo.open:rtl-viewpager:2.0.0'
+  //  implementation "com.google.android.material:material:1.8.0-alpha02"
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
+    //Realm
+    implementation 'io.realm:realm-gradle-plugin:10.9.0'
+    implementation "io.reactivex.rxjava2:rxjava:2.2.6"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    //Cast
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:chromecast-sender:0.23'
+    implementation("com.google.apis:google-api-services-youtube:v3-rev198-1.23.0") {
+        exclude group: 'com.google.guava'
+        exclude group: 'org.apache.httpcomponents'
+        exclude group: 'com.google.code.findbugs'
+        exclude group: 'com.google.http-client', module: 'google-http-client-jackson2'
+    }
+
+    implementation 'com.google.android.gms:play-services-appset:16.0.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-basement:18.1.0'
+    implementation("com.google.api-client:google-api-client-android:1.23.0") {
+        exclude group: 'com.google.guava'
+        exclude group: 'org.apache.httpcomponents'
+        exclude group: 'com.google.code.findbugs'
+        exclude group: 'com.google.http-client', module: 'google-http-client-jackson2'
+    }
+
+    implementation 'com.google.android.gms:play-services-cast-framework'
+
+    // Facebook SDK
+    implementation 'com.facebook.android:facebook-android-sdk:5.15.3'
+    implementation 'com.facebook.android:audience-network-sdk:6.12.0'
+
+    // IronSource
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.5'
+    implementation 'com.google.android.gms:play-services-appset:16.0.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-basement:18.1.0'
+
+/// Add Facebook Network
+    implementation 'com.ironsource.adapters:facebookadapter:4.3.38'
+    implementation 'com.facebook.android:audience-network-sdk:6.12.0'
+// Add Vungle Network
+    implementation 'com.ironsource.adapters:vungleadapter:4.3.18'
+    implementation 'com.vungle:publisher-sdk-android:6.12.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.16.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.16.1'
+
+}
+

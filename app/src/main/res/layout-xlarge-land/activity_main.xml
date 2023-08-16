@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/black_almost_pure"
+    tools:context=".Activities.MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="net.laenredadera.full.peliculas.gratis.navidad.Activities.MainActivity"
+        >
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="56dp"
+                >
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <include android:id="@+id/toolbar"
+                        layout="@layout/toolbar" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/myPrimaryDarkColor"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:itemIconTint="@color/almost_pure_white"
+                        app:itemTextColor="@color/white_translucent"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:tabGravity="fill"
+
+                        />
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <!-- The main content view -->
+
+                <com.duolingo.open.rtlviewpager.RtlViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_below="@id/appbar"
+                    android:animateLayoutChanges="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navview"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:background="@color/dark_gray"
+            app:headerLayout="@layout/drawable_header"
+            app:menu="@menu/navigation_menu"
+            android:fitsSystemWindows="true"
+
+            />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/native_banner_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+

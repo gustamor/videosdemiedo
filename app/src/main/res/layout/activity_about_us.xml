@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Activities.AboutUsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_gravity="center"
+        android:textSize="23sp"
+        android:text="@string/app_name"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="36dp"
+
+        android:src="@drawable/icono"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <View
+        android:id="@+id/about_line_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/text_aboutus_sources"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="@string/domainsource"
+            />
+
+
+        <TextView
+            android:id="@+id/text_aboutus_trademark"
+            android:layout_marginLeft="@dimen/spacing_xxs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/spacing_s"
+            android:text="@string/trademark"
+            android:layout_marginTop="@dimen/spacing_l"
+            />
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_aboutus_dontrights"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/wedonthaverights"
+        />
+
+
+</LinearLayout>

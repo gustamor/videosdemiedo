@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--
+
+     <color name="colorPrimary">#9E9E9E</color>
+     <color name="colorPrimaryDark">#616161</color>
+     <color name="colorPrimaryLight">#F5F5F5</color>
+     <color name="colorAccent">#FF5252</color>
+     <color name="colorPrimaryText">#212121</color>
+     <color name="colorSecondaryText">#757575</color>
+     <color name="colorIcons">#212121</color>
+     <color name="colorDivider">#BDBDBD</color>
+
+     <color name="colorMainBackground">#0F0E0E</color>
+     <color name="colorCardBackground">#212121</color>
+-->
+
+    <!-- Android -->
+    <color name="myPrimaryDarkColor">#1976d2</color>
+     <color name="myPrimaryColorTransparent">#1F2196f3</color>
+    <color name="myWindowBackground">#ffffff</color>
+    <color name="dark_blue">#15202b</color>
+
+    <!-- Regular colors -->
+     <color name="black">#000000</color>
+     <color name="black_almost_pure">#0d0d0d</color>
+     <color name="dark_gray">#292929</color>
+    <color name="almost_pure_white">#f5f5f5</color>
+    <color name="white">#FFFFFF</color>
+     <color name="red_600">#e53935</color>
+     <color name="red_500">#f44336</color>
+
+    <!-- Translucent -->
+    <color name="black_more_translucent">#99000000</color>
+     <color name="black_almost_translucent">#50000000</color>
+
+     <color name="white_translucent">#eeFFFFFF</color>
+
+
+     <!-- SoundCloud Shades of Gray-->
+     <color name="grey_darker">#424242</color>
+     <color name="grey_dark">#606060</color>
+     <color name="grey">#c3c3c3</color>
+    <color name="grey_lighter">#ededed</color>
+
+
+</resources>

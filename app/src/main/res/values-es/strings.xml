@@ -1,0 +1,113 @@
+<resources>
+
+
+    <string name="app_name">Peliculas Gratis de Terror</string>
+    <string name="app_name_toolbar">Cine de terror</string>
+    <string name="appbar_scrolling_view_behavior" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Dialogs -->
+    <string name="dontleaveus">¿Salir?</string>
+
+    <!-- general-->
+    <string name="favorites">Mis favoritas</string>
+    <string name="loading">Cargando…</string>
+    <string name="empty_textview">Error cargado datos</string>
+    <string name="yes">Sí</string>
+    <string name="share">Comparte</string>
+    <string name="search_hint">Búsqueda</string>
+    <string name="search">Búsqueda</string>
+    <string name="no">No</string>
+
+
+    <!-- Connection dialogs -->
+
+
+    <!-- Search dialog -->
+
+    <string name="search_message">Escribe para buscar vídeos</string>
+    <string name="ok">OK</string>
+
+
+    <!-- Youtube -->
+
+    <string name="send_to">Envía a: </string>
+
+
+    <string name="suggest_film_subject">[Contenido] Petición de película de terror</string>
+    <string name="suggest_film_message">¿Buscas alguna película? ¿Algunas de las que hay en la app no está cargando? Comentanoslo aquí:\n\n</string>
+
+    <!-- Navigation menu -->
+
+    <string name="ilike">Me gusta</string>
+    <string name="rate_app">Quiero valorar esta app ⭐</string>
+
+    <!-- Order by menu -->
+
+    <string name="newer">Más nuevas</string>
+    <string name="older">Más antiguas</string>
+    <string name="descr_order_menu">Ordenar por</string>
+
+    <!-- Bus Events DONT TRANSLATE-->
+
+    <string name="error_data">Error trayendo datos</string>
+    <string name="noconnection">En este momento no es posible conectar con el servidor. Por favor, intentalo de nuevo en diez minutos</string>
+    <!-- About Us -->
+    <string name="aboutus">Acerca de</string>
+    <string name="wedonthaverights"> No tenemos los derechos sobre los vídeos. Si cualquier Creador tiene inconvenientes, siéntanse libres de escribir por email directamente a: riseagain.apps@gmail.com
+
+      \n\nWe do not own the rights for the videos. If any Creator is having issues, feel free to mail us directly at -: riseagain.apps@gmail.com</string>
+    <string name="domainsource">Esta app es de vídeos publicados en Internet. Todos los vídeos que pueden visualizarse con esta app, sin excepción alguna, son contenido público difundido por y alojado en servidores de terceros.</string>
+    <string name="trademark">TM</string>
+    <string name="promotionalMessage">Ey! Seguro que te gustará: \n</string>
+
+    <!-- Notifications -->
+
+    <string name="nowplaying">Ahora reproduciendo: </string>
+    <string name="from">De</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <string name="suggestions">Peticiones de película</string>
+    <!-- Invites messages -->
+    <string name="facebookQuote">⚡ ¡Estoy usando esta app y me encanta! \n</string>
+    <string name="invite_email">Invita por Email</string>
+
+    <string name="moreapps">Instala más de Arise Apps</string>
+    <string name="othernets">Comparte por otras redes</string>
+    <string name="tweet_app">Tuitea esta app</string>
+    <string name="facebook_app">Háblale a tus amigos de ésto</string>
+
+    <string name="busco_pelicula">¿Buscas alguna película? Comentanoslo aquí:/n</string>
+
+    <string name="hola">Hola\,\n\nEstoy viendo ahora\: </string>
+    <string name="pelisandroid">\n\nen Peliculas Gratis de Terror en Español para Android.\n Pulsa el siguiente enlace para abrir la app:\n</string>
+    <!-- Sync Preferences -->
+    <string name="currentTime">Tiempo actual</string>
+    <string name="totalTime">Total</string>
+
+    <string name="wallpaperscary_promo">Imágenes de Miedo</string>
+
+
+    <string name="splashdescription">Pueden verse bts la palma de muchas manos tocando el crista del dispostivo</string>
+    <string name="more">Más</string>
+    <string name="less">Menos</string>
+    <string name="favEmpyIcon">No es Favortio</string>
+    <string name="send_to_ytbe">Envía a reproductor</string>
+    <string name="without_config_title">
+       Fallo de conexión
+    </string>
+    <string name="without_config_message">No has hecho nada mal, el fallo está de nuestro lado. Si el problema continúa ocurriendo, ponte en contacto con nosotros
+    </string>
+    <string name="try_again">
+        Habla con soporte
+    </string>
+    <string name="cancel">
+        Cancel
+    </string>
+
+    <string name="firebase_crash_subject">[Soporte] No ha sido posible conectar</string>
+    <string name="firebase_crash_message"> </string>
+</resources>

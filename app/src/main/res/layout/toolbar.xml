@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/black_almost_pure"
+    android:elevation="1dp"
+    android:fontFamily="@font/chunq_dipped"
+    android:weightSum="100"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/Material.AppThemeDark"
+    app:titleTextColor="@color/white"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_backarrow_tab"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="start"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="@dimen/spacing_m"
+        android:layout_weight="10"
+        android:src="@drawable/leftarrow"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:layout_marginRight="@dimen/spacing_xl"
+        android:layout_marginBottom="@dimen/spacing_xs"
+        android:layout_weight="90"
+        android:background="@color/black_almost_pure"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:hint="@string/search_message"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:maxLength="64"
+        android:maxLines="1"
+        android:queryHint="@string/search"
+        android:textColor="@color/white_translucent"
+        android:textColorHighlight="#7cff88"
+        android:textColorHint="@color/black_almost_translucent"
+        android:textSize="24sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_orderby"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/spacing_l"
+        android:layout_marginBottom="@dimen/spacing_xs"
+        android:backgroundTint="#292929"
+        android:contentDescription="@string/descr_order_menu"
+        android:onClick="showPopup"
+        android:src="@drawable/baseline_filter_list_black_18dp"
+        android:visibility="gone"
+
+        />
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/black_almost_pure"
+    tools:context=".Activities.YoutubeVideoActivity">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/YouTubePlayer"
+        android:name="com.google.android.youtube.player.YouTubePlayer"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false"
+        app:autoPlay="false"
+        app:enableAutomaticInitialization="false"
+        app:handleNetworkEvents="true"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/native_banner_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/cast_screen_layout"/>
+    <FrameLayout
+        android:orientation="vertical"
+        android:id="@+id/banner_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <androidx.mediarouter.app.MediaRouteButton
+        android:id="@+id/media_route_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/youtubeVideoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_m"
+        android:layout_marginStart="@dimen/spacing_xs"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/spacing_m"
+        android:paddingTop="@dimen/spacing_s"
+        android:paddingBottom="@dimen/spacing_xl"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:scrollbars="horizontal"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Material.AppThemeDark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/black_almost_pure</item>
+        <item name="colorPrimaryDark">@color/black_almost_pure</item>
+        <item name="colorAccent">@color/red_500</item>
+        <item name="titleTextColor">@color/almost_pure_white</item>
+        <item name="subtitleTextColor">@color/almost_pure_white</item>
+        <item name="colorBackgroundFloating">@color/black_almost_pure</item>
+
+    </style>
+
+    <style name="Material.AppThemeDark.ActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!-- Public Application Themes -->
+
+
+    <!-- Toolbar Styles -->
+
+    <style name="MonotonTextAppearance">
+        <item name="android:fontFamily">@font/chunq_dipped</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="DanceScriptTextAppearance">
+        <item name="android:fontFamily">@font/paranoid_freak</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>
